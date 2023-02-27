@@ -1,21 +1,15 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int num;
-    cin>>num;
-    for(int i=1;i<=num;i++){
-        if(i%3==0 and i%5==0){
-            cout<<"FizzBuzz"<<endl;
-        }
-        else if(i%3==0){
-            cout<<"Fizz"<<endl;
-        }
-        else if(i%5==0){
-            cout<<"Buzz"<<endl;
-        }
-        else{
-            cout<<i<<endl;
-        }
-    }
+    int x,y;
+    cin>>x;
+    cin>>y;
+    int str;
+    str=x;
+    x=y;
+    y=str;
+    cout<<"AFTER SWAP WE GET: "<<endl;
+    cout<<"X is "<<x<<endl;
+    cout<<"Y is "<<y;
     return 0;
 }

@@ -1,30 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int day;
-    cin>>day;
-    switch(day){
-        case(1):
-        cout<<"Mon"<<endl;
-        break;
-        case(2):
-        cout<<"Tue"<<endl;
-        break;
-        case(3):
-        cout<<"Wed"<<endl;
-        break;
-        case(4):
-        cout<<"Thu"<<endl;
-        break;
-        case(5):
-        cout<<"Fri"<<endl;
-        break;
-        case(6):
-        cout<<"Sat"<<endl;
-        break;
-        default:
-        cout<<"Sunday"<<endl;
-        break;
+    int x,y,m;
+    cin>>x;
+    cin>>y;
+    int sum=0;
+    cout<<"Enter the number for divisble by : ";
+    cin>>m;
+    for(int i=x;i<=y;i++){
+        if(i%m==0){
+            sum=sum+i;
+        }
     }
+    cout<<"The sum is : "<<sum;
     return 0;
 }
